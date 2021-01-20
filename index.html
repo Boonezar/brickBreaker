@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Brick Breaker</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/sam.png" />
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body onload="MyGame.game.initialize();">
+        <header>
+            <h1>Brick Breaker!</h1>
+        </header>
+        <div id="game">
+            <div id="main-menu" class="screen">
+                <div class="menu">
+                    <button id="new-game-button">New&nbsp;Game</button><br>
+                    <button id="high-scores-button">High&nbsp;Scores</button><br>
+                    <button id="credits-button">Credits</button><br>
+                </div>
+            </div>
+            <div id="game-play" class="screen">
+                <canvas id="canvas-main" width="980" height="600"></canvas>
+            </div>
+            <div id="high-scores" class="screen">
+                <div id="high-scores-list"></div><br>
+                <button id="back-button1" class="back-button">Back</button>
+            </div>
+            <div id="credits" class="screen">
+                <div id="credits-info">
+                    <br>Created by<br>Sam Christiansen<br>for CS 5410
+                </div><br>
+                <button id="back-button2" class="back-button">Back</button>
+            </div>
+        </div>
+
+        <script> let MyGame = { screens : {} };</script>
+        <script src="scripts/particleSystem.js"></script>
+        <script src="scripts/persistence.js"></script>
+        <script src="scripts/input.js"></script>
+        <script src="scripts/graphics.js"></script>
+        <script src="scripts/game.js"></script>
+        <script src="scripts/mainMenu.js"></script>
+        <script src="scripts/credits.js"></script>
+        <script src="scripts/gameplay.js"></script>
+        <script src="scripts/highscores.js"></script>
+    </body>
+</html>
